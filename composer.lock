@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "352e47f835cf1b1306effbfa92126c90",
-    "content-hash": "1dbd616c5f482338a84dc3adb2dc807d",
+    "hash": "41e928f03889cd1a5c2be0fb29b79169",
+    "content-hash": "3b6c7a6d64a6c926589a052f611b8fd5",
     "packages": [
         {
             "name": "aferrandini/urlizer",
@@ -1125,16 +1125,16 @@
         },
         {
             "name": "doctrine/phpcr-bundle",
-            "version": "1.2.4",
+            "version": "dev-release/1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doctrine/DoctrinePHPCRBundle.git",
-                "reference": "cdc8c50858ceb9fc01f0cbd72ab03ed1fd7f6b4c"
+                "url": "https://github.com/sulu-io/DoctrinePHPCRBundle.git",
+                "reference": "28cad32ab8c71032b8e4c6124be58051d26ffafa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrinePHPCRBundle/zipball/cdc8c50858ceb9fc01f0cbd72ab03ed1fd7f6b4c",
-                "reference": "cdc8c50858ceb9fc01f0cbd72ab03ed1fd7f6b4c",
+                "url": "https://api.github.com/repos/sulu-io/DoctrinePHPCRBundle/zipball/28cad32ab8c71032b8e4c6124be58051d26ffafa",
+                "reference": "28cad32ab8c71032b8e4c6124be58051d26ffafa",
                 "shasum": ""
             },
             "require": {
@@ -1174,29 +1174,31 @@
                     "Doctrine\\Bundle\\PHPCRBundle\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
-                    "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de"
-                },
-                {
                     "name": "Lukas Kahwe Smith",
                     "email": "smith@pooteeweet.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
                 }
             ],
             "description": "Symfony DoctrinePHPCRBundle",
             "homepage": "http://www.doctrine-project.org",
             "keywords": [
-                "database",
-                "odm",
-                "persistence",
-                "phpcr"
+                "Database",
+                "ODM",
+                "PHPCR",
+                "Persistence"
             ],
-            "time": "2015-05-22 10:02:46"
+            "support": {
+                "source": "https://github.com/sulu-io/DoctrinePHPCRBundle/tree/release/1.2"
+            },
+            "time": "2016-02-18 09:06:08"
         },
         {
             "name": "doctrine/phpcr-odm",
@@ -1977,16 +1979,16 @@
         },
         {
             "name": "jackalope/jackalope-jackrabbit",
-            "version": "1.2.2",
+            "version": "dev-release/1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jackalope/jackalope-jackrabbit.git",
-                "reference": "4c85b350a1fa5aeb59bc7d27e66078fef840e614"
+                "url": "https://github.com/sulu-io/jackalope-jackrabbit.git",
+                "reference": "920c0d46c080e9f596a6e027cd4703c9b759049c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jackalope/jackalope-jackrabbit/zipball/4c85b350a1fa5aeb59bc7d27e66078fef840e614",
-                "reference": "4c85b350a1fa5aeb59bc7d27e66078fef840e614",
+                "url": "https://api.github.com/repos/sulu-io/jackalope-jackrabbit/zipball/920c0d46c080e9f596a6e027cd4703c9b759049c",
+                "reference": "920c0d46c080e9f596a6e027cd4703c9b759049c",
                 "shasum": ""
             },
             "require": {
@@ -2020,7 +2022,11 @@
                     "Jackalope\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-0": {
+                    "Jackalope\\": "tests/"
+                }
+            },
             "license": [
                 "MIT",
                 "Apache-2.0"
@@ -2038,7 +2044,10 @@
                 "phpcr",
                 "transport implementation"
             ],
-            "time": "2015-10-18 16:25:35"
+            "support": {
+                "source": "https://github.com/sulu-io/jackalope-jackrabbit/tree/release/1.2"
+            },
+            "time": "2016-02-08 14:45:43"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -3759,16 +3768,16 @@
         },
         {
             "name": "sulu/document-manager",
-            "version": "dev-develop",
+            "version": "dev-feature/custom-urls",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/sulu-document-manager.git",
-                "reference": "0a63b9522444c757efeaf7771547fb3f86be715f"
+                "reference": "d7a5f27b2143a6fa18004ae38c77d77c86f7a8ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/sulu-document-manager/zipball/0a63b9522444c757efeaf7771547fb3f86be715f",
-                "reference": "0a63b9522444c757efeaf7771547fb3f86be715f",
+                "url": "https://api.github.com/repos/sulu-io/sulu-document-manager/zipball/d7a5f27b2143a6fa18004ae38c77d77c86f7a8ae",
+                "reference": "d7a5f27b2143a6fa18004ae38c77d77c86f7a8ae",
                 "shasum": ""
             },
             "require": {
@@ -3802,26 +3811,26 @@
                 }
             ],
             "description": "Sulu Document Manager",
-            "time": "2016-02-29 11:41:57"
+            "time": "2016-03-14 10:02:11"
         },
         {
             "name": "sulu/sulu",
-            "version": "dev-develop",
+            "version": "dev-feature/custom-urls",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sulu-io/sulu.git",
-                "reference": "5aee70195bcbd3247c08f70201ac2e286c14cb6f"
+                "reference": "973efccaaafe29f9ac45810d9831d6cbd959b3ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sulu-io/sulu/zipball/5aee70195bcbd3247c08f70201ac2e286c14cb6f",
-                "reference": "5aee70195bcbd3247c08f70201ac2e286c14cb6f",
+                "url": "https://api.github.com/repos/sulu-io/sulu/zipball/973efccaaafe29f9ac45810d9831d6cbd959b3ec",
+                "reference": "973efccaaafe29f9ac45810d9831d6cbd959b3ec",
                 "shasum": ""
             },
             "require": {
                 "cboden/ratchet": "0.3.*",
                 "doctrine/orm": "2.5.*",
-                "doctrine/phpcr-bundle": "~1.2.0",
+                "doctrine/phpcr-bundle": "dev-release/1.2 as 1.2.5",
                 "doctrine/phpcr-odm": "~1.3.0",
                 "friendsofsymfony/http-cache": "1.3.*",
                 "friendsofsymfony/rest-bundle": "~1.4",
@@ -3831,11 +3840,11 @@
                 "massive/search-bundle": "dev-develop",
                 "oro/doctrine-extensions": "^1.0",
                 "pagerfanta/pagerfanta": "~1.0",
-                "php": "^5.5 || ^7.0",
+                "php": ">=5.5",
                 "pulse00/ffmpeg-bundle": "^0.6",
                 "sensio/framework-extra-bundle": "3.0.*",
                 "stof/doctrine-extensions-bundle": "1.1.*",
-                "sulu/document-manager": "dev-develop",
+                "sulu/document-manager": "dev-feature/custom-urls",
                 "symfony-cmf/routing-bundle": "1.2.*",
                 "symfony/swiftmailer-bundle": "~2.3",
                 "symfony/symfony": "~2.8",
@@ -3861,7 +3870,7 @@
                 "doctrine/doctrine-bundle": "1.4.*",
                 "doctrine/doctrine-fixtures-bundle": "2.2.*",
                 "guzzle/plugin-mock": "3.9.*",
-                "jackalope/jackalope-jackrabbit": "~1.2.0",
+                "jackalope/jackalope-jackrabbit": "dev-release/1.2 as 1.2.3",
                 "massive/build-bundle": "0.2.*",
                 "matthiasnoback/symfony-config-test": "^1.0",
                 "matthiasnoback/symfony-dependency-injection-test": "^0.7.3",
@@ -3907,7 +3916,7 @@
                 "core",
                 "sulu"
             ],
-            "time": "2016-03-16 14:18:38"
+            "time": "2016-03-14 18:58:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4068,7 +4077,7 @@
             ],
             "authors": [
                 {
-                    "name": "Symfony CMF community",
+                    "name": "Symfony CMF Community",
                     "homepage": "https://github.com/symfony-cmf/Routing/contributors"
                 }
             ],
@@ -6219,13 +6228,28 @@
             "time": "2016-01-21 09:24:53"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "1.2.5",
+            "alias_normalized": "1.2.5.0",
+            "version": "dev-release/1.2",
+            "package": "doctrine/phpcr-bundle"
+        },
+        {
+            "alias": "1.2.3",
+            "alias_normalized": "1.2.3.0",
+            "version": "dev-release/1.2",
+            "package": "jackalope/jackalope-jackrabbit"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "sulu/sulu": 20,
         "sulu/document-manager": 20,
         "massive/search-bundle": 20,
         "zendframework/zendsearch": 20,
+        "doctrine/phpcr-bundle": 20,
+        "jackalope/jackalope-jackrabbit": 20,
         "phpcr/phpcr-shell": 10,
         "behat/mink-extension": 20,
         "behat/mink-selenium2-driver": 20,
