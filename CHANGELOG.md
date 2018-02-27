@@ -1,6 +1,9 @@
 CHANGELOG for Sulu CMF
 ======================
 
+* dev-master
+    * HOTFIX      sulu/sulu-standard#856  [Sulu-Standard]           Fix compatibility with php 5.5
+
 * 1.6.15 (2018-02-27)
     * HOTFIX      sulu/sulu-standard#837  [Sulu-Standard]           Remove deprecated apcu example in website.php and admin.php
     * HOTFIX      sulu/sulu#3796          [HttpCache]               Increased priority of update-response-subscriber 
