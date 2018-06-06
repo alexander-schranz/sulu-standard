@@ -4,6 +4,57 @@ CHANGELOG for Sulu CMF
 * dev-master
     * HOTFIX      sulu/sulu-standard#856  [Sulu-Standard]           Fix compatibility with php 5.5
 
+* 1.6.19 (2018-05-24)
+    * HOTFIX      #3980 [PreviewBundle]           Fix kernel.project_dir parameter for PreviewKernel
+    * BUGFIX      #3967 [AudienceTargetingBundle] Fixed loading of minified js files for production
+    * HOTFIX      #3950 [ContactBundle]           Fixed empty latitude and longitude
+    * HOTFIX      #3949 [ContentBundle]           Fixed security check for deleting draft
+
+* 1.6.18 (2018-05-03)
+    * ENHANCEMENT #3930 [PreviewBundle]         Fixed preview style-link
+    * HOTFIX      #3946 [ContentBundle]         Single internal link: Clear selection when target doesn't exists
+    * HOTFIX      #3941 [WebsiteBundle]         Fix hideInSitemap flag for sitemap twig extension
+    * BUGFIX      #3926 [WebsiteBundle]         Fix profiler for none sulu routes
+
+* 1.5.14 (2018-05-03)
+    * HOTFIX      #3946 [ContentBundle]         Single internal link: Clear selection when target doesn't exists
+    * HOTFIX      #3941 [WebsiteBundle]         Fix hideInSitemap flag for sitemap twig extension
+    * BUGFIX      #3926 [WebsiteBundle]         Fix profiler for none sulu routes
+
+* 1.6.17 (2018-04-23)
+    * FEATURE     sulu/sulu#3906 [MediaBundle]             Add file version delete to media overlay
+    * HOTFIX      sulu/sulu#3912 [ContentBundle]           Fixed content-query when a child is broken
+    * FEATURE     sulu/sulu#3914 [ContactBundle]           Added latitude/longitude to address
+    * FEATURE     sulu/sulu#3905 [MediaBundle]             Add canonical and robots noIndex headers to download of old versions
+    * ENHANCEMENT sulu/sulu#3899 [PreviewBundle]           Replaced links in preview with '#'
+    * ENHANCEMENT sulu/sulu#3884 [ContentBundle]           Improved developer-experience when overriding content-teaser-provider
+    * ENHANCEMENT sulu/sulu#3897 [ContentBundle]           SEO title length changed from 55 to 70
+    * HOTFIX      sulu/sulu#3870 [Husky]                   Updated husky to fix bug with thumbnails in datagrid
+    * BUGFIX      sulu/sulu#3915 [ContactBundle]           Fix typehint in api ContactLocale constructor
+    * BUGFIX      sulu/sulu#3918 [RestComponent]           CSV Export: Fixed serialization of boolean
+    * ENHANCEMENT sulu/sulu#3876 [ContentBundle]           Reload data when changing template
+
+* 1.6.16 (2018-03-19)
+    * ENHANCEMENT sulu/sulu#3849 [AdminBundle]             Add Twig main blocks to be able to use inheritance
+    * HOTFIX      sulu/sulu#3848 [ContentBundle]           Added check for unknown-document for "sulu_content_load"
+    * BUGFIX      sulu/sulu#3844 [Husky]                   Fix accidentally escaping of select value
+    * ENHANCEMENT sulu/sulu#3846 [ContentBundle]           Added authored field to base-page-document index
+    * ENHANCEMENT sulu/sulu#3843 [CustomUrlBundle]         Show custom url tab only when configured
+    * BUGFIX      sulu/sulu#3828 [Husky]                   Avoid expand ids parameter to be added to datagrid request without content
+    * BUGFIX      sulu/sulu#3828 [Husky]                   Fixed paragraphs and breaks in paste from word plugin
+    * HOTFIX      sulu/sulu#3813 [SnippetBundle]           Ignore wrong template exception
+    * HOTFIX      sulu/sulu#3820 [CustomUrlBundle]         Added base-domains to query for custom-urls
+    * HOTFIX      sulu/sulu#3810 [ContentBundle]           Fixed rename and publish exception if page has link to a child
+    * BUGFIX      sulu/sulu#3805 [ContentBundle]           Fix spacing between rows and section in content template generation
+    * HOTFIX      sulu/sulu#3797 [CategoryBundle]          Fixed category csv-export
+    * HOTFIX      sulu/sulu#3797 [Rest]                    Fixed issue with large amount of ids in doctrine list-builder query
+    * ENHANCEMENT sulu/sulu#3830 [All]                     Avoid duplicated run of composer update for travis
+    * BUGFIX      sulu/sulu#3826 [ContentBundle]           Fix enabling of save button when toggler is changed
+    * HOTFIX      sulu/sulu#3819 [MediaBundle]             Fix forgotten context binding for resetPreviewUrl method
+    * FEATURE     sulu/sulu#3816 [All]                     Validate if grunt build was run for all bundles with circleci
+    * BUGFIX      sulu/sulu#3806 [All]                     Fix compatibility on lowest and fix appveyor
+    * BUGFIX      sulu/sulu#3351 [ContentBundle]           Fix spacing between rows and section in content template generation
+
 * 1.6.15 (2018-02-27)
     * HOTFIX      sulu/sulu-standard#837  [Sulu-Standard]           Remove deprecated apcu example in website.php and admin.php
     * HOTFIX      sulu/sulu#3796          [HttpCache]               Increased priority of update-response-subscriber 
@@ -178,6 +229,31 @@ CHANGELOG for Sulu CMF
     * FEATURE     #3278 [Util]                  Changed way to determine `sulu.version` to composer.lock
     * FEATURE     #3278 [Util]                  Introduced new parameter `app.version` read from composer.json
     * ENHANCEMENT #3154 [All]                   Upgrade symfony to ^3.0
+
+* 1.5.15 (2018-05-24)
+    * HOTFIX      #3988 [ContentBundle]         Date content type: Reading: Check if value is instance of DateTime
+    * HOTFIX      #3988 [BlockComponent]        Read: Ignore unknown types
+    * BUGFIX      #3967 [All]                   Fixed loading of minified js files for production
+    * HOTFIX      #3963 [ContentBundle]         Don't reload data when changing template in add form
+    * HOTFIX      #3953 [RouteBundle]           Fix route options with dash
+
+* 1.5.14 (2018-05-03)
+    * HOTFIX      #3946 [ContentBundle]         Single internal link: Clear selection when target doesn't exists
+    * HOTFIX      #3941 [WebsiteBundle]         Fix hideInSitemap flag for sitemap twig extension
+    * BUGFIX      #3926 [WebsiteBundle]         Fix profiler for none sulu routes
+
+* 1.5.13 (2018-04-23)
+    * BUGFIX      sulu/sulu#3915 [ContactBundle]         Fix typehint in api ContactLocale constructor
+    * BUGFIX      sulu/sulu#3918 [RestComponent]         CSV Export: Fixed serialization of boolean
+    * ENHANCEMENT sulu/sulu#3876 [ContentBundle]         Reload data when changing template
+
+* 1.5.12 (2018-03-19)
+    * ENHANCEMENT sulu/sulu#3830 [All]                   Avoid duplicated run of composer update for travis
+    * BUGFIX      sulu/sulu#3826 [ContentBundle]         Fix enabling of save button when toggler is changed
+    * HOTFIX      sulu/sulu#3819 [MediaBundle]           Fix forgotten context binding for resetPreviewUrl method
+    * FEATURE     sulu/sulu#3816 [All]                   Validate if grunt build was run for all bundles with circleci
+    * BUGFIX      sulu/sulu#3806 [All]                   Fix compatibility on lowest and fix appveyor
+    * BUGFIX      sulu/sulu#3351 [ContentBundle]         Fix spacing between rows and section in content template generation
 
 * 1.5.11 (2018-02-27)
     * HOTFIX      sulu/sulu-standard#844 [SULU-STANDARD] Fix home type in example webspace
